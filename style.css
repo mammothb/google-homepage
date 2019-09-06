@@ -1,7 +1,22 @@
+html {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #content {
@@ -9,10 +24,144 @@ body {
 }
 
 #header {
+  width: 100%;
+}
+
+#header a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.header {
+  color: #404040;
+  height: 40px;
   float: right;
-  top: 0;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.header span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+#apps {
+  background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+  background-position: -132px -38px;
+  background-size: 528px 68px;
+  display: inline-block;
+  height: 30px;
+  opacity: 0.5;
+  width: 30px;
+}
+
+#apps:hover {
+  opacity: 1;
+}
+
+#user {
+  background-image: url("https://lh3.googleusercontent.com/-tnfKQH8BDS4/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfaBI0_WV7pmbUt8ZjswJLEvfgVIQ.CMID/s32-c/photo.jpg");
+  background-size: 32px 32px;
+  border-radius: 50%;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
 }
 
 #logo {
   padding-top: 89px;
+}
+
+#search-bar {
+  border-color: #d5d5d5;
+  border-radius: 26px;
+  border-style: solid;
+  border-width: 1px;
+  height: 52px;
+  line-height: 52px;
+  vertical-align: middle;
+  width: 30%;
+}
+
+#search-glow {
+  border-radius: 26px;
+  height: 52px;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(-52px);
+  width: 30%;
+}
+
+#search-bar:hover > #search-glow,
+#search-bar input:focus ~ #search-glow {
+  box-shadow: 0 0 10px #d5d5d5;
+}
+
+#search-bar svg {
+  display: inline-flex;
+  float: left;
+  height: 20px;
+  opacity: 0.5;
+  padding-left: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+}
+
+#search-bar input {
+  border: 0;
+  height: 34px;
+  width: 85%;
+}
+
+#language a {
+  color: blue;
+  margin-left: 5px;
+}
+
+#footer {
+  bottom: 0;
+  color: #606060;
+  position: fixed;
+  width: 100%;
+}
+
+#footer a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer {
+  background-color: #e6e6e6f2;
+  border-style: solid;
+  border-color: #d5d5d5;
+  border-width: 1px;
+  font-size: 14px;
+  height: 40px;
+}
+
+.footer:last-child {
+  border-top-width: 0px;
+}
+
+.footer span {
+  line-height: 40px;
+}
+
+#country {
+  float: left;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+#links-left {
+  float: left;
+  margin-left: 10px;
+}
+
+#links-right {
+  float: right;
+  margin-right: 10px;
 }

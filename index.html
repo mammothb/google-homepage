@@ -5,11 +5,21 @@
     <title>Google</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
   </head>
   <body>
     <div id="content">
       <div id="header">
-        Header
+        <div class="header">
+          <span id="header-text">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+          </span>
+          <span id="header-icon">
+            <a id="apps" href="#"></a>
+            <a id="user" href="#"></a>
+          </span>
+        </div>
       </div>
       <center>
         <div id="logo">
@@ -17,16 +27,41 @@
         </div>
         <div id="search-form">
           <div id="search-bar">
-            Search bar
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
             <input value="">
+            <div id="search-glow"></div>
           </div>
           <div id="search-button">
-            Search. Lucky.
+            <button type="button">Google Search</button>
+            <button type="button">I'm Feeling Lucky</button>
           </div>
+        </div>
+        <div id="language">
+          Google offered in:
+          <a href="">中文(简体)</a>
+          <a href="">Melayu</a>
+          <a href="">தமிழ்</a>
         </div>
       </center>
       <div id="footer">
-        Footer
+        <div class="footer">
+          <span id="country">Singapore</span>
+        </div>
+        <div class="footer">
+          <span id="links-left">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+            <a href="#">How Search works</a>
+          </span>
+          <span id="links-right">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+          </span>
+        </div>
       </div>
     </div>
   </body>
